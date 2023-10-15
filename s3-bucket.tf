@@ -9,4 +9,9 @@ module "s3-bucket" {
 
   control_object_ownership = true
   object_ownership         = "ObjectWriter"
+
+  tags = {
+    Department = "Hashi"
+    Billable = "True"
+  }
 }
