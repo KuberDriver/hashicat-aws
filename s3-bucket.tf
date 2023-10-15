@@ -7,9 +7,6 @@ module "s3-bucket" {
   # Allow deletion of non-empty bucket
   force_destroy = true
 
-  control_object_ownership = true
-  object_ownership         = "ObjectWriter"
-
   tags = {
     Department = "Hashi"
     Billable = "True"
